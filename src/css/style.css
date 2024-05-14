@@ -1,0 +1,41 @@
+body {
+    background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+
+    main {
+    
+        #Calculation {
+            transform: translate(75vh, 10vh);    
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 5vh;
+            width: 50vh;
+    
+            h1 {
+                color: white;
+            }
+    
+            form {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 3vh;
+    
+                input {
+                    padding: 2vh;
+                    width: 40vh;
+                    outline: none;
+                }
+                
+                button {
+                    padding: 2vh;
+                    width: 30vh;
+                    cursor: pointer;
+                }
+    
+            }
+        }
+    }
+}
