@@ -12,13 +12,15 @@
         <div id="Calculation">
             <h1>Basic Calculator</h1>
             <form action="">
-                <input id="base" type="number" placeholder="Base">
-                <input id="height" type="number" placeholder="Height">
-                <button type="button">Calculate Perimeter</button>
-                <button type="button">Calculate Area</button>
+                <input id="base" type="number" min="1" placeholder="Base">
+                <input id="height" type="number" min="1" placeholder="Height">
+                <button id="calculatePerimeter" type="button">Calculate Perimeter</button>
+                <button id="calculateArea" type="button">Calculate Area</button>
             </form>
-            <div id="perimeterResult"></div>
-            <div id="areaResult"></div>
+            <div id="calculationResults">
+                <div id="perimeterResult"></div>
+                <div id="areaResult"></div>
+            </div>
         </div>
     </main>
     <footer></footer>

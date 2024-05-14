@@ -1,18 +1,19 @@
-let base = document.getElementById('base');
-let height = document.getElementById('height');
+const base = document.getElementById('base');
+const height = document.getElementById('height');
 
-let perimeterResult = document.getElementById('perimeterResult');
-let areaResult = document.getElementById('areaResult');
- 
-function perimeterCalculation(base, height) {
-    perimeterResult = 2 * (base + height);
-    perimeterResult.innerHTML = `Perimeter: ${perimeterResult}`;
-}
+const calculatePerimeter = document.getElementById('calculatePerimeter');
+const calculateArea = document.getElementById('calculateArea');
 
-perimeterCalculation();
+const perimeterResult = document.getElementById('perimeterResult');
+const areaResult = document.getElementById('areaResult');
 
-function areaCalculation(base, height) {
-    areaResult = base * height;
-}
 
-areaCalculation();
+calculatePerimeter.addEventListener('click', function (){    
+    let perimeter = 2 * (base.value + height.value);
+    perimeterResult.innerHTML = `Perimeter: ${perimeter}`;
+})
+
+calculateArea.addEventListener('click', function (){    
+    let area = base.value * height.value;
+    areaResult.innerHTML = `Area: ${area}`;
+})
